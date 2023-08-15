@@ -41,7 +41,7 @@ document.querySelector('[data-start]').addEventListener('click', function () {
     document.querySelector('[data-seconds]').textContent =
       addLeadingZero(seconds);
 
-    // timeRemaining -= 1000;
+    timeRemaining -= 1000;
 
     if (timeRemaining < 0) {
       clearInterval(intervalId);
