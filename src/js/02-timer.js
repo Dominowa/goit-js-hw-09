@@ -27,7 +27,7 @@ document.querySelector('[data-start]').addEventListener('click', function () {
     document.querySelector('#datetime-picker').value
   );
   const now = new Date();
-  const timeRemaining = endDate - now;
+  let timeRemaining = endDate - now;
 
   clearInterval(intervalId);
 
